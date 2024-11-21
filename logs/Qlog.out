@@ -1,0 +1,274 @@
+[000.000] Version: QLog_Linux_Android_V1.5.26
+[000.000] will use filter file: default filter
+[000.000] [init_qlog_path] [1981] entry
+[000.000] Written 4 bytes
+[000.000] [2085] restart entry
+[000.103] Find [0] idVendor=2c7c, idProduct=0801, bNumInterfaces=5, ttyDM=/dev/ttyUSB0, ttyGENERAL=, ttyTHIRD=, busnum=006, dev=004, usbdevice_pah=/sys/bus/usb/devices/6-1
+[000.105] open /dev/ttyUSB0 ttyfd = 3
+[000.105] Press CTRL+C to stop catch log.
+[000.105] catch log via tty port
+[000.113] kfifo_alloc [0] = 4
+[000.113] qlog_logfile_create /opt/support/logs2/20241121_130424_0000.qmdl2 logfd=4
+[000.156] diag_query_diag_id
+[000.157] process_diag_id_response
+[000.157] insert_diag_id_entry diag_id=1, peripheral=7, process_name=APPS
+[000.157] insert_diag_id_entry diag_id=2, peripheral=0, process_name=mdm/modem/root_pd
+[000.157] diag_send_qsr4_db_file_list_cmd_req peripheral=0
+[000.164] guid: len = 5980140, name = 5d0b9b18-86eb-123a-6ddc-2aebf83bd33d.qdb
+[000.164] diag_send_qsr4_file_open_cmd_req idx=0
+[000.169] open read_file_fd 3
+[000.169] kfifo_alloc [1] = 5
+[000.169] diag_send_qsr4_file_read_cmd_req offset=00000000, len=4000
+[005.108] recv:time[5108] qmdl:[3384127] 
+[009.088] diag_send_qsr4_file_read_cmd_req offset=05980000, len=140
+[009.093] total_len = 5980140
+[009.093] diag_send_qsr4_file_close_send_req idx=0, read_file_fd=3
+[009.093] kfifo_free [1] = 5
+[009.094] close read_file_fd 3
+[009.248] qlog_init_filter_finished
+[010.218] recv:time[10218] qmdl:[6129829] 
+[015.271] recv:time[15271] qmdl:[6140112] 
+[020.372] recv:time[20372] qmdl:[6150443] 
+[025.425] recv:time[25425] qmdl:[6161039] 
+[030.442] recv:time[30442] qmdl:[6171007] 
+[035.538] recv:time[35538] qmdl:[6181146] 
+[040.544] recv:time[40544] qmdl:[6191136] 
+[046.278] recv:time[46278] qmdl:[6257018] 
+[052.064] recv:time[52064] qmdl:[6347196] 
+[057.264] recv:time[57264] qmdl:[6381287] 
+[075.440] recv:time[75440] qmdl:[6395486] 
+[080.722] recv:time[80722] qmdl:[6411644] 
+[094.026] recv:time[94026] qmdl:[6421847] 
+[107.478] poll fd=3, revents = 0019
+[107.478] QLog abnormal exit...
+[107.478] kfifo_free [0] = 4
+[107.478] savelog_size_dm_all = 6427700
+[107.478] pthread_join(filter)
+[107.478] close_fds exit
+[108.478] [2085] restart entry
+[108.479] No Quectel Modules found, Wait for connect or Press CTRL+C to quit!
+[110.479] [2085] restart entry
+[111.583] Find [0] idVendor=2c7c, idProduct=0801, bNumInterfaces=1, ttyDM=, ttyGENERAL=, ttyTHIRD=, busnum=006, dev=005, usbdevice_pah=/sys/bus/usb/devices/6-1
+[111.584] open /dev/bus/usb/006/005 dm_usbfd = 3
+[111.584] Press CTRL+C to stop catch log.
+[111.584] qlog_usbfs_read ( dm ) enter
+[111.584] kfifo_alloc [0] = 5
+[111.584] catch dump for mdm chipset
+[111.584] <=== Q_SAHARA_WAIT_ONE
+[111.584] Read 8 bytes, q_cmd 1 and packet q_len 48 bytes
+[111.584] RECEIVED <-- Q_SAHARA_ONE
+[111.584] ===> Q_SAHARA_TWO
+[111.584] <=== Q_SAHARA_WAIT_TWO
+[111.584] Read 8 bytes, q_cmd 1 and packet q_len 48 bytes
+[111.584] RECEIVED <-- Q_SAHARA_ONE
+[111.584] Received an unknown q_cmd: 1 
+[111.584] <=== Q_SAHARA_WAIT_TWO
+[111.585] Read 8 bytes, q_cmd 9 and packet q_len 16 bytes
+[111.585] RECEIVED <-- Q_SAHARA_NINE
+[111.585] <=== Q_SAHARA_NINE
+[111.585] Memory Table Address: 0x8FBA9008, Memory Table q_len: 0x000007EC
+[111.585] ===>  Q_SAHARA_TEN, address 0x8FBA9008, q_len 0x000007EC
+[111.585] <=== Q_SAHARA_WAIT_SEVEN
+[111.585] <=== Q_SAHARA_WAIT_SEVEN
+[111.585] Memory Debug table received
+[111.585] Base 0x14680000 Len 0x00010000, 'OCIMEM.BIN', 'OCIMEM'
+[111.585] Base 0x0B000000 Len 0x00018000, 'CODERAM.BIN', 'AOP Code RAM region'
+[111.585] Base 0x0B0E0000 Len 0x00008000, 'DATARAM.BIN', 'AOP Data RAM region'
+[111.585] Base 0x0C300000 Len 0x00000400, 'MSGRAM0.BIN', 'AOP MSGRAM0 region'
+[111.585] Base 0x0C310000 Len 0x00000400, 'MSGRAM1.BIN', 'AOP MSGRAM1 region'
+[111.585] Base 0x0C320000 Len 0x00000400, 'MSGRAM2.BIN', 'AOP MSGRAM2 region'
+[111.585] Base 0x0C330000 Len 0x00000400, 'MSGRAM3.BIN', 'AOP MSGRAM3 region'
+[111.585] Base 0x0C340000 Len 0x00000400, 'MSGRAM4.BIN', 'AOP MSGRAM4 region'
+[111.585] Base 0x0C350000 Len 0x00000400, 'MSGRAM5.BIN', 'AOP MSGRAM5 region'
+[111.585] Base 0x0C360000 Len 0x00000400, 'MSGRAM6.BIN', 'AOP MSGRAM6 region'
+[111.585] Base 0x0C370000 Len 0x00000400, 'MSGRAM7.BIN', 'AOP MSGRAM7 region'
+[111.585] Base 0x0C380000 Len 0x00000400, 'MSGRAM8.BIN', 'AOP MSGRAM8 region'
+[111.585] Base 0x0C390000 Len 0x00000400, 'MSGRAM9.BIN', 'AOP MSGRAM9 region'
+[111.585] Base 0x0C3A0000 Len 0x00000400, 'MSGRAM10.BIN', 'AOP MSGRAM10 region'
+[111.585] Base 0x0C3B0000 Len 0x00000400, 'MSGRAM11.BIN', 'AOP MSGRAM11 region'
+[111.585] Base 0x0C3C0000 Len 0x00000400, 'MSGRAM12.BIN', 'AOP MSGRAM12 region'
+[111.585] Base 0x0C3D0000 Len 0x00000400, 'MSGRAM13.BIN', 'AOP MSGRAM13 region'
+[111.585] Base 0x0C3E0000 Len 0x00000400, 'MSGRAM14.BIN', 'AOP MSGRAM14 region'
+[111.585] Base 0x0C3F0000 Len 0x00000400, 'MSGRAM15.BIN', 'AOP MSGRAM15 region'
+[111.585] Base 0x03FA0000 Len 0x00009F00, 'IPA_IU.BIN', 'IPA IRAM region'
+[111.585] Base 0x03F50000 Len 0x00005000, 'IPA_SRAM.BIN', 'IPA SRAM region'
+[111.585] Base 0x03F60000 Len 0x00018FFC, 'IPA_HRAM.BIN', 'IPA HRAM region'
+[111.585] Base 0x03FC2000 Len 0x00000100, 'IPA_MBOX.BIN', 'IPA MBOX region'
+[111.585] Base 0x03E06000 Len 0x00002000, 'IPA_GSI.BIN', 'IPA GSI  region'
+[111.585] Base 0x03F81000 Len 0x00000468, 'IPA_SEQ.BIN', 'IPA SEQ region'
+[111.585] Base 0x09060000 Len 0x00010000, 'SHRM_MEM.BIN', 'SHRM MEM region'
+[111.585] Base 0x80000000 Len 0x000001F0, 'CD_STRCT.BIN', 'CD STRCT region'
+[111.585] Base 0x800001F0 Len 0x000FF000, 'CD_BTDDR.BIN', 'CD BTDDR region'
+[111.585] Base 0x800FF1F0 Len 0x00400000, 'CD_BTIMM.BIN', 'CD BTIMM region'
+[111.585] Base 0x804FF1F0 Len 0x00001000, 'CD_SHIMM.BIN', 'CD SHIMM region'
+[111.585] Base 0x01100000 Len 0x00002000, 'DCC_SRAM.BIN', 'DCC SRAM region'
+[111.585] Base 0x8FBA9830 Len 0x00000004, 'FSM_STS.BIN', 'Aoss rst fsm stat'
+[111.585] Base 0x8FBA9840 Len 0x00000004, 'FSM_CTRL.BIN', 'Aoss rst fsm ctrl'
+[111.585] Base 0x8FBA9850 Len 0x00000004, 'RST_STAT.BIN', 'Reset Status Region'
+[111.585] Base 0x8FBA9860 Len 0x00000004, 'PMIC_PON.BIN', 'Pmic PON stat'
+[111.585] Base 0x8FBA9870 Len 0x00000004, 'PMON_HIS.BIN', 'PM PON HIST '
+[111.585] Base 0x8FBA9A08 Len 0x00000200, 'PBUS_LOG.BIN', 'Pmic PBUS log dump'
+[111.585] Base 0x80000000 Len 0x20000000, 'DDRCS0.BIN', ' DDR CS0 Memory'
+[111.585] Base 0x148B4008 Len 0x00000BE8, 'load.cmm', 'CMM Script'
+[111.585] <=== Q_SAHARA_WAIT_EIGHT
+[111.585] ===>  Q_SAHARA_TEN, address 0x14680000, q_len 0x00010000
+[111.586] Received file 'OCIMEM.BIN'
+[111.586] 65536 bytes transferred in 0.001238 seconds (50.4847MBps)
+[111.587] ===>  Q_SAHARA_TEN, address 0x0B000000, q_len 0x00018000
+[111.589] Received file 'CODERAM.BIN'
+[111.589] 98304 bytes transferred in 0.002770 seconds (33.8448MBps)
+[111.589] ===>  Q_SAHARA_TEN, address 0x0B0E0000, q_len 0x00008000
+[111.590] Received file 'DATARAM.BIN'
+[111.590] 32768 bytes transferred in 0.001030 seconds (30.3398MBps)
+[111.591] ===>  Q_SAHARA_TEN, address 0x0C300000, q_len 0x00000400
+[111.591] Received file 'MSGRAM0.BIN'
+[111.591] 1024 bytes transferred in 0.000222 seconds (4.3989MBps)
+[111.591] ===>  Q_SAHARA_TEN, address 0x0C310000, q_len 0x00000400
+[111.591] Received file 'MSGRAM1.BIN'
+[111.591] 1024 bytes transferred in 0.000271 seconds (3.6036MBps)
+[111.591] ===>  Q_SAHARA_TEN, address 0x0C320000, q_len 0x00000400
+[111.591] Received file 'MSGRAM2.BIN'
+[111.591] 1024 bytes transferred in 0.000274 seconds (3.5641MBps)
+[111.592] ===>  Q_SAHARA_TEN, address 0x0C330000, q_len 0x00000400
+[111.592] Received file 'MSGRAM3.BIN'
+[111.592] 1024 bytes transferred in 0.000282 seconds (3.4630MBps)
+[111.592] ===>  Q_SAHARA_TEN, address 0x0C340000, q_len 0x00000400
+[111.592] Received file 'MSGRAM4.BIN'
+[111.592] 1024 bytes transferred in 0.000283 seconds (3.4508MBps)
+[111.592] ===>  Q_SAHARA_TEN, address 0x0C350000, q_len 0x00000400
+[111.593] Received file 'MSGRAM5.BIN'
+[111.593] 1024 bytes transferred in 0.000338 seconds (2.8892MBps)
+[111.593] ===>  Q_SAHARA_TEN, address 0x0C360000, q_len 0x00000400
+[111.593] Received file 'MSGRAM6.BIN'
+[111.593] 1024 bytes transferred in 0.000244 seconds (4.0023MBps)
+[111.593] ===>  Q_SAHARA_TEN, address 0x0C370000, q_len 0x00000400
+[111.593] Received file 'MSGRAM7.BIN'
+[111.593] 1024 bytes transferred in 0.000260 seconds (3.7560MBps)
+[111.593] ===>  Q_SAHARA_TEN, address 0x0C380000, q_len 0x00000400
+[111.594] Received file 'MSGRAM8.BIN'
+[111.594] 1024 bytes transferred in 0.000287 seconds (3.4027MBps)
+[111.594] ===>  Q_SAHARA_TEN, address 0x0C390000, q_len 0x00000400
+[111.594] Received file 'MSGRAM9.BIN'
+[111.594] 1024 bytes transferred in 0.000325 seconds (3.0048MBps)
+[111.594] ===>  Q_SAHARA_TEN, address 0x0C3A0000, q_len 0x00000400
+[111.594] Received file 'MSGRAM10.BIN'
+[111.594] 1024 bytes transferred in 0.000277 seconds (3.5255MBps)
+[111.594] ===>  Q_SAHARA_TEN, address 0x0C3B0000, q_len 0x00000400
+[111.595] Received file 'MSGRAM11.BIN'
+[111.595] 1024 bytes transferred in 0.000247 seconds (3.9537MBps)
+[111.595] ===>  Q_SAHARA_TEN, address 0x0C3C0000, q_len 0x00000400
+[111.595] Received file 'MSGRAM12.BIN'
+[111.595] 1024 bytes transferred in 0.000300 seconds (3.2552MBps)
+[111.595] ===>  Q_SAHARA_TEN, address 0x0C3D0000, q_len 0x00000400
+[111.595] Received file 'MSGRAM13.BIN'
+[111.595] 1024 bytes transferred in 0.000306 seconds (3.1914MBps)
+[111.595] ===>  Q_SAHARA_TEN, address 0x0C3E0000, q_len 0x00000400
+[111.596] Received file 'MSGRAM14.BIN'
+[111.596] 1024 bytes transferred in 0.000307 seconds (3.1810MBps)
+[111.596] ===>  Q_SAHARA_TEN, address 0x0C3F0000, q_len 0x00000400
+[111.596] Received file 'MSGRAM15.BIN'
+[111.596] 1024 bytes transferred in 0.000308 seconds (3.1707MBps)
+[111.596] ===>  Q_SAHARA_TEN, address 0x03FA0000, q_len 0x00009F00
+[111.597] Received file 'IPA_IU.BIN'
+[111.597] 40704 bytes transferred in 0.000840 seconds (46.2123MBps)
+[111.597] ===>  Q_SAHARA_TEN, address 0x03F50000, q_len 0x00005000
+[111.597] Received file 'IPA_SRAM.BIN'
+[111.597] 20480 bytes transferred in 0.000440 seconds (44.3892MBps)
+[111.597] ===>  Q_SAHARA_TEN, address 0x03F60000, q_len 0x00018FFC
+[111.599] Received file 'IPA_HRAM.BIN'
+[111.599] 102396 bytes transferred in 0.001370 seconds (71.2791MBps)
+[111.599] ===>  Q_SAHARA_TEN, address 0x03FC2000, q_len 0x00000100
+[111.599] Received file 'IPA_MBOX.BIN'
+[111.599] 256 bytes transferred in 0.000235 seconds (1.0389MBps)
+[111.599] ===>  Q_SAHARA_TEN, address 0x03E06000, q_len 0x00002000
+[111.600] Received file 'IPA_GSI.BIN'
+[111.600] 8192 bytes transferred in 0.000411 seconds (19.0085MBps)
+[111.600] ===>  Q_SAHARA_TEN, address 0x03F81000, q_len 0x00000468
+[111.600] Received file 'IPA_SEQ.BIN'
+[111.600] 1128 bytes transferred in 0.000187 seconds (5.7526MBps)
+[111.600] ===>  Q_SAHARA_TEN, address 0x09060000, q_len 0x00010000
+[111.601] Received file 'SHRM_MEM.BIN'
+[111.601] 65536 bytes transferred in 0.000983 seconds (63.5809MBps)
+[111.601] ===>  Q_SAHARA_TEN, address 0x80000000, q_len 0x000001F0
+[111.601] Received file 'CD_STRCT.BIN'
+[111.601] 496 bytes transferred in 0.000206 seconds (2.2962MBps)
+[111.601] ===>  Q_SAHARA_TEN, address 0x800001F0, q_len 0x00020000
+[111.613] ===>  Q_SAHARA_TEN, address 0x800E01F0, q_len 0x0001F000
+[111.615] Received file 'CD_BTDDR.BIN'
+[111.615] 1044480 bytes transferred in 0.013284 seconds (74.9845MBps)
+[111.615] ===>  Q_SAHARA_TEN, address 0x800FF1F0, q_len 0x00020000
+[111.668] Received file 'CD_BTIMM.BIN'
+[111.668] 4194304 bytes transferred in 0.052887 seconds (75.6330MBps)
+[111.668] ===>  Q_SAHARA_TEN, address 0x804FF1F0, q_len 0x00001000
+[111.668] Received file 'CD_SHIMM.BIN'
+[111.668] 4096 bytes transferred in 0.000282 seconds (13.8520MBps)
+[111.668] ===>  Q_SAHARA_TEN, address 0x01100000, q_len 0x00002000
+[111.668] Received file 'DCC_SRAM.BIN'
+[111.668] 8192 bytes transferred in 0.000234 seconds (33.3868MBps)
+[111.668] ===>  Q_SAHARA_TEN, address 0x8FBA9830, q_len 0x00000004
+[111.669] Received file 'FSM_STS.BIN'
+[111.669] 4 bytes transferred in 0.000247 seconds (0.0154MBps)
+[111.669] ===>  Q_SAHARA_TEN, address 0x8FBA9840, q_len 0x00000004
+[111.669] Received file 'FSM_CTRL.BIN'
+[111.669] 4 bytes transferred in 0.000298 seconds (0.0128MBps)
+[111.669] ===>  Q_SAHARA_TEN, address 0x8FBA9850, q_len 0x00000004
+[111.669] Received file 'RST_STAT.BIN'
+[111.669] 4 bytes transferred in 0.000318 seconds (0.0120MBps)
+[111.669] ===>  Q_SAHARA_TEN, address 0x8FBA9860, q_len 0x00000004
+[111.670] Received file 'PMIC_PON.BIN'
+[111.670] 4 bytes transferred in 0.000318 seconds (0.0120MBps)
+[111.670] ===>  Q_SAHARA_TEN, address 0x8FBA9870, q_len 0x00000004
+[111.670] Received file 'PMON_HIS.BIN'
+[111.670] 4 bytes transferred in 0.000318 seconds (0.0120MBps)
+[111.670] ===>  Q_SAHARA_TEN, address 0x8FBA9A08, q_len 0x00000200
+[111.670] Received file 'PBUS_LOG.BIN'
+[111.670] 512 bytes transferred in 0.000324 seconds (1.5070MBps)
+[111.670] ===>  Q_SAHARA_TEN, address 0x80000000, q_len 0x00020000
+[111.884] ===>  Q_SAHARA_TEN, address 0x81000000, q_len 0x00020000
+[112.094] ===>  Q_SAHARA_TEN, address 0x82000000, q_len 0x00020000
+[112.304] ===>  Q_SAHARA_TEN, address 0x83000000, q_len 0x00020000
+[112.515] ===>  Q_SAHARA_TEN, address 0x84000000, q_len 0x00020000
+[112.724] ===>  Q_SAHARA_TEN, address 0x85000000, q_len 0x00020000
+[112.934] ===>  Q_SAHARA_TEN, address 0x86000000, q_len 0x00020000
+[113.144] ===>  Q_SAHARA_TEN, address 0x87000000, q_len 0x00020000
+[113.359] ===>  Q_SAHARA_TEN, address 0x88000000, q_len 0x00020000
+[113.570] ===>  Q_SAHARA_TEN, address 0x89000000, q_len 0x00020000
+[113.784] ===>  Q_SAHARA_TEN, address 0x8A000000, q_len 0x00020000
+[113.996] ===>  Q_SAHARA_TEN, address 0x8B000000, q_len 0x00020000
+[114.207] ===>  Q_SAHARA_TEN, address 0x8C000000, q_len 0x00020000
+[114.418] ===>  Q_SAHARA_TEN, address 0x8D000000, q_len 0x00020000
+[114.629] ===>  Q_SAHARA_TEN, address 0x8E000000, q_len 0x00020000
+[114.840] ===>  Q_SAHARA_TEN, address 0x8F000000, q_len 0x00020000
+[115.049] ===>  Q_SAHARA_TEN, address 0x90000000, q_len 0x00020000
+[115.259] ===>  Q_SAHARA_TEN, address 0x91000000, q_len 0x00020000
+[115.470] ===>  Q_SAHARA_TEN, address 0x92000000, q_len 0x00020000
+[115.681] ===>  Q_SAHARA_TEN, address 0x93000000, q_len 0x00020000
+[115.895] ===>  Q_SAHARA_TEN, address 0x94000000, q_len 0x00020000
+[116.105] ===>  Q_SAHARA_TEN, address 0x95000000, q_len 0x00020000
+[116.319] ===>  Q_SAHARA_TEN, address 0x96000000, q_len 0x00020000
+[116.543] ===>  Q_SAHARA_TEN, address 0x97000000, q_len 0x00020000
+[116.772] ===>  Q_SAHARA_TEN, address 0x98000000, q_len 0x00020000
+[117.001] ===>  Q_SAHARA_TEN, address 0x99000000, q_len 0x00020000
+[117.592] ===>  Q_SAHARA_TEN, address 0x9A000000, q_len 0x00020000
+[118.045] ===>  Q_SAHARA_TEN, address 0x9B000000, q_len 0x00020000
+[118.447] ===>  Q_SAHARA_TEN, address 0x9C000000, q_len 0x00020000
+[118.828] ===>  Q_SAHARA_TEN, address 0x9D000000, q_len 0x00020000
+[119.358] ===>  Q_SAHARA_TEN, address 0x9E000000, q_len 0x00020000
+[120.137] ===>  Q_SAHARA_TEN, address 0x9F000000, q_len 0x00020000
+[122.878] Received file 'DDRCS0.BIN'
+[122.878] 536870912 bytes transferred in 11.207206 seconds (45.6849MBps)
+[123.137] ===>  Q_SAHARA_TEN, address 0x148B4008, q_len 0x00000BE8
+[123.137] Received file 'load.cmm'
+[123.137] 3048 bytes transferred in 0.000511 seconds (5.6885MBps)
+[123.137] ===> SAHARA_RESET
+[123.137] <=== Q_SAHARA_WAIT_THREE
+[123.137] Read 8 bytes, q_cmd 8 and packet q_len 8 bytes
+[123.137] RECEIVED <-- Q_SAHARA_EIGTH
+[123.137] Sahara protocol completed
+[123.137] Catch DUMP using Sahara protocol successful
+
+
+[123.138] ql_usbfs_read n = -1, errno: 108 (Cannot send after transport endpoint shutdown)
+[123.138] kfifo_free [0] = 5
+[123.138] qlog_usbfs_read ( dm ) exit
+[123.138] close_fds exit

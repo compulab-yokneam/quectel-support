@@ -1,0 +1,39 @@
+  -----------------------------------
+  General  |                    path: /org/freedesktop/ModemManager1/Modem/0
+           |               device id: 303f8c608bfde1a3e94be85fddef71f489a94d1d
+  -----------------------------------
+  Hardware |            manufacturer: Quectel
+           |                   model: RM520N-GL
+           |       firmware revision: RM520NGLAAR01A08M4G
+           |          carrier config: ROW_Commercial
+           | carrier config revision: 0A010809
+           |            h/w revision: 20000
+           |                 current: gsm-umts, lte, 5gnr
+           |            equipment id: 869710030002905
+  -----------------------------------
+  System   |                  device: /sys/devices/platform/soc@0/33800000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb6/6-1
+           |                 drivers: qmi_wwan, option
+           |                  plugin: quectel
+           |            primary port: cdc-wdm0
+           |                   ports: cdc-wdm0 (qmi), ttyUSB2 (at), ttyUSB3 (at), wwan0 (net)
+  -----------------------------------
+  Status   |                    lock: sim-pin2
+           |          unlock retries: sim-pin (3), sim-puk (10), sim-pin2 (3), sim-puk2 (10)
+           |                   state: disabled
+  -----------------------------------
+  Modes    |               supported: allowed: any; preferred: none
+           |                 current: allowed: any; preferred: none
+  -----------------------------------
+  IP       |               supported: ipv4, ipv6, ipv4v6
+  -----------------------------------
+  3GPP     |                    imei: 869710030002905
+           |           enabled locks: fixed-dialing
+           |    packet service state: detached
+  -----------------------------------
+  3GPP EPS |    ue mode of operation: csps-2
+           |      initial bearer apn: uinternet
+           |  initial bearer ip type: ipv4v6
+  -----------------------------------
+  SIM      |        primary sim path: /org/freedesktop/ModemManager1/SIM/0
+           |          sim slot paths: slot 1: /org/freedesktop/ModemManager1/SIM/0 (active)
+           |                          slot 2: none

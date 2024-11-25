@@ -55,3 +55,6 @@ OK
 ATE
 OK
 ```
+
+# quecte support thread about the same issue:
+https://forums.quectel.com/t/rm521f-and-rm520n-cannot-register-to-the-network/34831/6
